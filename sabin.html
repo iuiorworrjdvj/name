@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="sabin.css">
+</head><style>
+	    body{
+        background-color: #0e1538;
+       text-align: center; 
+    }
+    
+    
+    
+    form{
+    color:white;
+    background-color: #0e1538;
+    width: 6cm;
+    height: 6cm;
+    border: solid 10pxs;
+border-radius: 20px;
+    text-align: center;
+    line-height: 1cm;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    margin: 1cm;
+    z-index: 1;
+    overflow: hidden;
+    
+position: relative;
+border:transparent;
+    
+}
+#sabin{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+form::before{
+    content: '';
+    position: absolute;
+    height: 6cm;
+    width: 6cm;
+    left: 0px;
+    background:linear-gradient(#00ccff,#d400d4);
+    animation:sabin 1s infinite;
+    z-index: -100;
+    
+}
+
+    form::after {
+        content:'';
+        position: absolute;
+        height:5.7cm;
+        width: 5.7cm;
+        left:0px;
+        top: 1px;
+        background-color:#0e1538;
+        inset:6px  6px 6px 6px;
+        text-align: center;
+        z-index: -100;
+    }
+
+
+
+    
+
+@keyframes sabin{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-style: italic;
+    background-color:rgba(0, 0, 255, 0.715);
+    color: white;
+}
+button:hover{
+    background-color: rgb(255, 0, 93);
+}
+
+</style>
+<body><p  style="text-transform: capitalize;color: white;font-size: 30px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-style: italic;">Fill the form to log in our website</p>
+	<form action="qwerty" >
+		<label for="sabin">username</label>
+		<input type="text" id="sabin" name="username" placeholder="username">
+		<label for="sabin">Password</label>
+		<input type="text" id="sabin" name="password" placeholder="password">
+		<button>log in</button>
+	</form>
+</body>
+</html>
